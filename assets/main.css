@@ -219,7 +219,7 @@ td{
 .box code{
     display: block;
     max-width: 600px;
-    width: 60%;
+    width: 90%;
     margin: 0 auto 20px auto;
     padding-left: 20px;
     background-color: var(--box-color);
@@ -229,7 +229,7 @@ td{
 .box-title{
     display: block;
     max-width: 600px;
-    width: 60%;
+    width: 90%;
     height: 30px;
     margin: 20px auto 0 auto;
     padding-left: 20px;
@@ -273,7 +273,6 @@ td{
     }
 
     #main-doc {
-        /* position: relative; */
         margin: 520px 10px 0 10px;
     }
 
