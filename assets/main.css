@@ -61,9 +61,12 @@ table {
     --head-color: #65b0f0; 
     --highlight-color: #F16529;
     --font-color: #f3f4f5;       
-    /* --code-color: rgba(65,94,120,0.5);       */
+    --box-color: #272726;
     --code-color:rgba(241,101,41,0.3); 
     --bg-color: #1b1b1c;
+    --punct-color:  #f7492a  ;
+    --elem-color:  #1b8ae8;
+
 }
 
 
@@ -91,7 +94,6 @@ body{
     line-height: 1.8;
 }
 
- 
 
 /*
     ======================================================
@@ -120,26 +122,23 @@ body{
     overflow-x: hidden;
 }
 
-#navbar  li{
+#navbar  a{
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
     position: relative;
     border-top: 1px solid var(--highlight-color);
     height: 50px;
     text-align: left;
     padding-left: 10px ;
+    color: var(--font-color);
+    text-decoration: none;
 }
 
 #navbar li:hover{
     background-color: var(--highlight-color);
 }
 
-#navbar a{
-    display: block;
-    color: var(--font-color);
-    text-decoration: none;
-}
+
 
 #navbar header{
     font-size: 1.5rem;
@@ -169,6 +168,9 @@ p{
     padding-left: 30px;
 }
 
+
+ 
+
 strong{
     font-weight: 800;
     color: var(--highlight-color)
@@ -195,3 +197,53 @@ figcaption{
     font-size: 0.9rem;
 }
 
+table{
+    margin: 50px auto 50px auto;
+    background-color: var(--box-color);
+}
+
+th{
+    background-color: var(--highlight-color);
+}
+
+td{
+    padding-left: 10px;
+    height: 50px;
+    border: 1px solid var(--code-color);
+    vertical-align: middle;
+}
+
+.col1{
+    max-width: 150px;
+    text-align: center;
+}
+
+.box code{
+    display: block;
+    max-width: 600px;
+    width: 60%;
+    margin: 0 auto;
+    padding-left: 20px;
+    background-color: var(--box-color);
+    border-radius: 2px;
+}
+
+.box-title{
+    display: block;
+    max-width: 600px;
+    width: 60%;
+    height: 30px;
+    margin: 20px auto 0 auto;
+    padding-left: 20px;
+    background-color: var(--highlight-color);
+    border-radius: 2px;
+    text-align: center;
+}
+
+.punctuation{
+    color: var(--punct-color);
+}
+
+.tag{
+    color: var(--elem-color);
+}

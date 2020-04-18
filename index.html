@@ -12,12 +12,11 @@
     <nav id="navbar">
         <ul>
             <header><img src="https://www.stickpng.com/assets/images/5847f5bdcef1014c0b5e489c.png" alt=""></header>
-            <li><a href="#introdcution">Introduction</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#html-head">HTML Head</a></li>
             <li><a href="#html-metadata">HTML Metadata</a></li>
             <li><a href="#elements">Elements</a></li>
             <li><a href="#attributes">Attributes</a></li>
-            <li><a href="#introdcution">Introduction</a></li>
-            <li><a href="#introdcution">Introduction</a></li>
         </ul>
     </nav>
 
@@ -38,7 +37,102 @@
                 <p>
                     HTML uses "markup" to annotate text, images, and other content for display in a Web browser. This "markup" is called by element.
                 </p>
+
+                <div class="box-title"><h2>A Simple HTML Document</h2></div>   
+                <div class="box">
+                    <code>
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">!DOCTYPE</span>
+                            html
+                            <span class="punctuation">></span>
+                        </span><br>                           
+                        
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">html</span>
+                            <span class="punctuation">></span>
+                        </span> <br>
+
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">head</span>
+                            <span class="punctuation">></span>
+                        </span> <br>
+
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">title</span>
+                            <span class="punctuation">></span>
+                            Page Title
+                            <span class="punctuation"><</span> 
+                            <span class="tag">/title</span>
+                            <span class="punctuation">></span>
+                        </span> <br>
+
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">/head</span>
+                            <span class="punctuation">></span>
+                        </span> <br>
+
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">body</span>
+                            <span class="punctuation">></span>
+                        </span> <br>
+
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">h1</span>
+                            <span class="punctuation">></span>
+                            My First Heading
+                            <span class="punctuation"><</span> 
+                            <span class="tag">/h1</span>
+                            <span class="punctuation">></span>
+                        </span> <br>
+
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">p</span>
+                            <span class="punctuation">></span>
+                            My first paragraph.
+                            <span class="punctuation"><</span> 
+                            <span class="tag">/p</span>
+                            <span class="punctuation">></span>
+                        </span> <br>
+
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">/body</span>
+                            <span class="punctuation">></span>
+                        </span> <br>
+
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">/html</span>
+                            <span class="punctuation">></span>
+                        </span> <br>
+
+                    </code>
+
+                    </html> 
+                </div>
                
+
+                <p>
+                    Example Explained:
+                </p>
+                <ul>
+                    <li>The <code> &lt;!DOCTYPE html&gt; </code> declaration defines this document to be HTML5</li>
+                    <li>The <code> &lt;html&gt; </code> element is the root element of an HTML page</li>
+                    <li>The <code> &lt;head&gt; </code> element contains meta information about the document</li>
+                    <li>The <code> &lt;title&gt; </code> element specifies a title for the document</li>
+                    <li>The <code> &lt;body&gt; </code> element contains the visible page content</li>
+                    <li>The <code> &lt;h1 &gt; </code> element defines a large heading</li>
+                    <li>The <code> &lt;p&gt; </code> element defines a paragraph</li>
+                </ul>
+    
             </article>
         </section>
 
@@ -50,8 +144,43 @@
                 <p>
                 The head of an HTML document is the part that is not displayed in the web browser when the page is loaded. 
                 It contains information such as the page <code> &lt; title &gt; </code>, links to CSS (if you choose to style your HTML content with CSS), links to custom favicons,
-                and other metadata (data about the HTML, such as the author, and important keywords that describe the document.)
+                and other metadata (data about the HTML, such as the author, and important keywords that describe the document).
                 </p>
+
+                <div class="box-title"><h2>HTML Head</h2></div>   
+                <div class="box">
+                    <code>
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">head</span>
+                            <span class="punctuation">></span>
+                        </span><br>   
+
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">meta</span>
+                            charset="utf-8"
+                            <span class="punctuation">></span>
+                        </span> <br>
+
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">title</span>
+                            <span class="punctuation">></span>
+                            My test page.
+                            <span class="punctuation"><</span> 
+                            <span class="tag">/title</span>
+                            <span class="punctuation">></span>
+                        </span> <br>
+
+                        <span>
+                            <span class="punctuation"><</span> 
+                            <span class="tag">/head</span>
+                            <span class="punctuation">></span>
+                        </span><br> 
+
+                    </code>
+                </div>
             </article>
 
         </section>
@@ -108,25 +237,43 @@
                     <figcaption>Attributes in an element.</figcaption>
                 </figure>
 
+                <p>Some of the most used attributes:</p>
+
+                <table>
+                    <tr>
+                        <th class="col1">Attribute</th>
+                        <th>Description</th>                        
+                    </tr>
+                    <tr>
+                        <td class="col1">class</td>
+                        <td>Often used with CSS to style elements with common properties.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col1">id</td>
+                        <td>Often used with CSS to style a specific element. The value of this attribute must be unique.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col1">href</td>
+                        <td>The URL of a linked resource.</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">color</td>
+                        <td>This attribute sets the text color using either a named color or a color specified in the hexadecimal #RRGGBB format.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col1">form</td>
+                        <td>Indicates the form that is the owner of the element.</td>
+                    </tr>
+                </table>
+
             </article>
 
         </section>
         
-        <section class="main-section">
-            <article>
-                <header></header>
-            </article>
-           
-
-        </section>
-        
-        <section class="">
-            <article>
-                <header></header>
-            </article>
-           
-
-        </section>
+          
     </main>
 </body>
 </html>
