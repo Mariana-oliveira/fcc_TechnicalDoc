@@ -168,9 +168,6 @@ p{
     padding-left: 30px;
 }
 
-
- 
-
 strong{
     font-weight: 800;
     color: var(--highlight-color)
@@ -189,6 +186,7 @@ figure{
     width: 50%;
     margin: 20px auto;
 }
+
 img{
     width: 100%;
 }
@@ -277,6 +275,12 @@ td{
     #main-doc {
         /* position: relative; */
         margin: 520px 10px 0 10px;
+    }
+
+
+    figure{
+        width: 100%;
+        margin: 10px auto;
     }
 
 }
